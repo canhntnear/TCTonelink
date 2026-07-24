@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCT GPS 2 - Vạn Phú Khánh</title>
+    <title>DINHVI.KHANHHOA.VN - Vạn Phú Khánh</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -62,16 +62,36 @@
         .contact-title {
             font-weight: bold;
             color: #1a1a1a;
-            margin-bottom: 6px;
+            margin-bottom: 10px;
             text-align: center;
             text-transform: uppercase;
             font-size: 12px;
         }
         .contact-item {
-            margin-bottom: 4px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .contact-item strong {
             color: #000000;
+        }
+        .address-item {
+            margin-bottom: 6px;
+        }
+        .phone-link {
+            display: inline-block;
+            background-color: #28a745;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+        .phone-link:active {
+            opacity: 0.8;
         }
         .btn-group {
             display: flex;
@@ -113,11 +133,27 @@
         <div id="status-text" class="status-text">Đang tự động chuyển hướng bạn đến cửa hàng ứng dụng...</div>
 
         <div class="contact-box">
-            <div class="contact-title">LẮP ĐẶT - BẢO HÀNH - GIA HẠN xin liên hệ:</div>
-            <div class="contact-item"><strong>Gia hạn dịch vụ:</strong> 0397 08 12 34</div>
-            <div class="contact-item"><strong>Góp ý dịch vụ:</strong> 0971 99 11 10</div>
-            <div class="contact-item"><strong>VPGD:</strong> 62/20 Đặng Tất, phường Nha Trang, tỉnh Khánh Hòa.</div>
-            <div class="contact-item"><strong>Website:</strong> vanphukhanh.com</div>
+            <div class="contact-title">THÔNG TIN LIÊN HỆ & BẢO HÀNH</div>
+            
+            <div class="contact-item">
+                <span><strong>LẮP ĐẶT:</strong> 0389 58 12 34</span>
+                <a href="tel:0389581234" class="phone-link">📞 Gọi ngay</a>
+            </div>
+
+            <div class="contact-item">
+                <span><strong>BẢO HÀNH - GIA HẠN:</strong> 0397 08 12 34</span>
+                <a href="tel:0397081234" class="phone-link">📞 Gọi ngay</a>
+            </div>
+
+            <div class="contact-item">
+                <span><strong>GÓP Ý DỊCH VỤ:</strong> 0585.114.114</span>
+                <a href="tel:0585114114" class="phone-link">📞 Gọi ngay</a>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #e0e0e0; margin: 8px 0;">
+
+            <div class="address-item"><strong>VPGD:</strong> 101 CT1A, KĐT Phước Long, Nam Nha Trang, Khánh Hòa</div>
+            <div class="address-item"><strong>Website:</strong> vanphukhanh.com</div>
         </div>
         
         <!-- Danh sách nút lựa chọn -->
@@ -158,7 +194,7 @@
                 return;
             }
 
-            // Nếu truy cập bằng Máy tính (PC / Laptop) -> Tự chuyển hướng thẳng sang trang Web Đăng Nhập
+            // Nếu truy cập bằng Máy tính (PC / Laptop) -> Tự chuyển hướng sang trang Web
             setTimeout(() => {
                 window.location.href = WEB_LOGIN_URL;
             }, 1000);
