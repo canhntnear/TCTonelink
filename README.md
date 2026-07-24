@@ -1,2 +1,0 @@
-# TCTonelink
-dinhvi.khanhhoa.vn
